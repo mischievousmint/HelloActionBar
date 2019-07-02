@@ -43,19 +43,22 @@ public class MainActivity extends AppCompatActivity {
                 Toasty.info(getApplicationContext(), "Hello I`m new", Toast.LENGTH_SHORT, true).show();
                 //toasty instructions: https://android-arsenal.com/details/1/5102
                 Fragment myNewFragment = new NewFragment();
-                FT.add(R.id.fragmenContainer, myNewFragment);
+                FT.replace(R.id.fragmenContainer, myNewFragment);
                 FT.commit();
                 return true;
             case R.id.action_search:
                 Log.i("ActionBar", "Search");
                 Toasty.success(getApplicationContext(), "Hi I`m searching", Toast.LENGTH_SHORT, true).show();
                 myNewFragment = new SearchFragment();
-                FT.add(R.id.fragmenContainer, myNewFragment);
+                FT.replace(R.id.fragmenContainer, myNewFragment);
                 FT.commit();
                 return true;
             case R.id.action_settings:
                 Log.i("ActionBar", "Settings");
                 Toasty.warning(getApplicationContext(), "Hey I`m settings.", Toast.LENGTH_SHORT, true).show();
+                myNewFragment = new SettingsFragment();
+                FT.replace(R.id.fragmenContainer, myNewFragment);
+                FT.commit();
                 return true;
             case R.id.action_colors:
                 Log.i("ActionBar", "Colors");

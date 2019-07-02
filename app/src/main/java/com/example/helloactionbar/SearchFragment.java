@@ -24,8 +24,8 @@ public class SearchFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View viewHomeFragment = inflater.inflate(R.layout.fragment_search, container, false);
-        TextView tvHome = viewHomeFragment.findViewById(R.id.tvSearch);
+        View viewSearchFragment = inflater.inflate(R.layout.fragment_search, container, false);
+        TextView tvHome = viewSearchFragment.findViewById(R.id.tvSearch);
       /*  tvHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +34,7 @@ public class SearchFragment extends Fragment {
             }
         });*/
 
-        return viewHomeFragment;
+        return viewSearchFragment;
     }
 
 
