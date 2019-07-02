@@ -5,6 +5,10 @@
         android:title="Settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
+    <item android:id="@+id/action_colors"
+        android:title="Colors"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
     <item android:id="@+id/action_search"
         android:title="Search"
         android:icon="@drawable/ic_search_black_24dp"
